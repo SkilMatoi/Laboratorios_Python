@@ -1,0 +1,7 @@
+[
+    {"id": 1, "nombre": "Layna", "especie": "Perro", "edad": 4},
+    {"id": 2, "nombre": "Sky", "especie": "Perro", "edad": 1},
+    {"id": 3, "nombre": "Olamide", "especie": "Hamster", "edad": 1},
+    {"id": 4, "nombre": "Christmas", "especie": "Hamster", "edad": 1},
+    {"id": 5, "nombre": "Yuumi", "especie": "Perro", "edad": 6}
+]
