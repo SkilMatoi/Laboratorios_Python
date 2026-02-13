@@ -2,18 +2,6 @@ import random
 import time
 
 
-class Temporizador:
-    def __enter__(self):
-        # Lo que pasa al abrir el 'with'
-        self.inicio = time.perf_counter()
-        return self
-
-    def __exit__(self, tipo_error, valor_error, traza_error):
-        # Lo que pasa al cerrar el 'with'
-        fin = time.perf_counter()
-        print(f"⏱️ Tardó {fin - self.inicio:.4f} segundos.")
-
-
 def repetidor(funcion):
     def wrapper(*args, **kwargs):
         intentos = 3
@@ -52,7 +40,3 @@ for n in prueba:
     print(f"\nNuevo numero")
     validar_numero(n)
 
-
-
-with Temporizador():
-    time.sleep(1)
