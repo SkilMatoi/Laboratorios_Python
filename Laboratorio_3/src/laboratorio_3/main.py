@@ -31,13 +31,12 @@ def repetidor(funcion):
     return wrapper
 
 
-# Recibe los numeros y los regresa al decorador
+
 @repetidor
 def validar_numero(n):
     return n
 
 
-# Genera numeros aleatorios
 def generadordeNumeros(limite):
     numero = 1
     while numero <= limite:
@@ -45,15 +44,15 @@ def generadordeNumeros(limite):
         numero = numero + 1
 
 
-# Crea 3 numeros aleatorios
+
 prueba = generadordeNumeros(3)
 
-# Recorre los 3 numeros generados
+
 for n in prueba:
     print(f"\nNuevo numero")
     validar_numero(n)
 
 
-# Uso:
+
 with Temporizador():
     time.sleep(1)
